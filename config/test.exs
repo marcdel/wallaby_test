@@ -4,7 +4,9 @@ use Mix.Config
 # you can enable the server option below.
 config :wallaby_test, WallabyTestWeb.Endpoint,
   http: [port: 4001],
-  server: false
+  server: true
+
+config :wallaby_test, :sql_sandbox, true
 
 # Print only warnings and errors during test
 config :logger, level: :warn
